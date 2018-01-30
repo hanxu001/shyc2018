@@ -186,7 +186,7 @@ input, select {
 .banner_text{
     font-size:12px;
     color: #D8EBFF;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     width: 90%;
     line-height: 1.6em;
     text-align: center;
@@ -308,26 +308,37 @@ input, select {
 .li .recharge{
    font-size: 18px;
    color: #666;
-   margin-top: 20px;
+   margin-top: 30px;
+   letter-spacing: 1px;
 }
 .li .recharge span{
     font-size:20px;
     color: #E11616;
+    display: inline-block;
+    /*border: 1px solid red;*/
+    width: 60px;
+    font-weight: bold;
 }
 .li .number{
    font-size: 18px;
    color: #666;
-   margin-top: 30px;
+   margin-top: 20px;
+   letter-spacing: 1px;
 }
 .li .number span{
     font-size:20px;
     color: #000;
+    display: inline-block;
+    /*border: 1px solid red;*/
+    width: 60px;
+    font-weight: bold;
 }
 
 .li .name{
     font-size: 22px;
     color: #333;
     margin-top: 30px;
+    font-weight: bold;
 }
 .way{
     display: flex;
