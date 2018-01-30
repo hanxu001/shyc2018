@@ -215,7 +215,7 @@ input, select {
     flex-wrap: wrap;
 }
 .banner_list a{
-    margin:4px 6px;
+    margin:4px 10px;
     font-size: 14px;
     color: #fff;
     text-decoration: underline;
