@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container flex" style="justify-content: space-between;">
+            <div class="left">
+                <a href="index.html"><img src="imgs/logo.png" alt=""></a>
+            </div>
+            <div class="right flex">
+                <a href="index.html">承兑大厅</a>
+                <a href="help.html">帮助中心</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="imgs/banner_title.png" alt="" class="banner_title">
+        <div class="banner_box">
+            <p>1 BitCNY= 1 CNY</p>
+            <p>1 BitUSD= 1 USD</p>
+        </div>
+        <div class="banner_text">BitCNY、BitUSD是比特股系统内与法币等价锚定的数字货币，</div>
+        <div class="banner_text">用户可以随时使用BitCNY/BitUSD和法币进行1:1兑换。</div>
+        <div class="banner_text2"><span></span>目前已支持交易平台<span></span> </div>
+        <div class="banner_list">
+            <p>xbrick.io</p>
+            <p>aex.com</p>
+            <p>big.one</p>
+            <p>zb.com</p>
+            <p>cointiger.com</p>
+            <p>coinbene</p>
+            <p>u.cx</p>
+            <p>kkcoin.com</p>
+        </div>
+    </div>
+    <div class="marquee">
+        <div class="container flex" style="background-color: #FECE68;">
+            <img src="imgs/icon1.png" alt="" style="width: 16px;height:16px;margin-left: 24px;;margin-right: 0px;">
+            <marquee behaviro="alternate">
+                <p>
+                小二承兑服务，为用户提供可靠的币币交易兑换服务，专业提供:BitCNY/BitUSD和法币的互相兑换。</p>
+            </marquee>
+        </div> 
+    </div>
+    <div class="title container flex">
+     <img src="imgs/icon2.png" alt="">
+     <p>兑换计算器</p>
+ </div>
+ <div class="change container flex">
+    <div class="change-item flex">
+        <p class="name">BitCNY数量</p>
+        <div>
+            <input type="text" 
+            placeholder="请输入BitCNY数量"
+            id="value1"
+            maxlength="7"
+            onblur="this.value=this.value.replace(/[^0-9.]/g,'')"
+            onkeyup="change()"
+            class="input">
+            <span>个</span>
+        </div>
+    </div>
+    <div class="change-item flex">
+        <p class="name">手续费汇率</p>
+        <div>
+            <input type="text" 
+            placeholder="请输入手续费汇率"
+            id="value2"
+            maxlength="4"
+            onblur="this.value=this.value.replace(/[^0-9.]/g,'')"
+            onkeyup="change()"
+            class="input">
+            <span>%</span>
+        </div>
+    </div>
+    <div class="change-item flex">
+        <p class="name">共需支付</p>
+        <div>
+            <span id="value3">0</span>
+            <span>元</span>
+        </div>
+    </div>
+</div>
+<div class="title container flex">
+ <img src="imgs/icon3.png" alt="">
+ <p>承兑商家</p>
+</div>
+<div class="seller container flex">
+    <div>
+        <p class="dian">QQ</p>
+        <P class="name">小二极速快兑</P>
+        <p class="recharge">充值:<span>0.5%</span>  提现:<span>0.5%</span></p>
+        <p class="way">诚信快捷／支持支付宝／银行转账</p>
+        <a target="_blank" class="qq" href="http://wpa.qq.com/msgrd?v=3&uin=1724429306&site=qq&menu=yes">
+            <img border="0" src="imgs/qq.png" alt="在线咨" title="在线咨询"/>
+            <span>1724429306交谈</span>
+        </a>
+    </div>
+    <div>
+        <p class="dian">微信</p>
+        <img src="imgs/code.jpg" alt="" class="code">
+        <p class="way">微信扫码，快捷沟通</p>
+    </div>
+</div>
+<script>
+    function change() {
+        if($('#value1').val() > 0 && $('#value2').val() > 0){
+         var count = $(" #value1 ").val() * (1 + $(" #value2 ").val() / 100)
+         $('#value3').text(count.toFixed(2))
+     } else{
+        $('#value3').text(0)
+    }
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>小二承兑中心</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container flex" style="justify-content: space-between;">
+            <div class="left">
+                <a href="index.html"><img src="imgs/logo.png" alt=""></a>
+            </div>
+            <div class="right flex">
+                <a href="index.html">承兑大厅</a>
+                <a href="help.html">帮助中心</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="imgs/banner_title.png" alt="" class="banner_title">
+        <div class="banner_text">
+            旨在为用户提供可靠的币币交易兑换服务。用户可以方便快速地进行货币兑换，然后进入比特股的贸易世界，在内盘进行交易；同时平台也提供
+        </div>
+        <div class="banner_text">
+            高效、稳定、低费率的币资产兑出服务，保证1:1的数字货币储备。每一位承兑商都经过严格审核，值得信赖。
+        </div>
+        <img src="imgs/banner_logo.png" alt="" class="banner_logo">
+        <div class="banner_text">BitCNY、BitUSD是比特股系统内与法币等价锚定的数字货币，</div>
+        <div class="banner_text">用户可以随时使用BitCNY/BitUSD和法币进行1:1兑换。</div>
+        <div class="banner_box">
+            <p>1 BitCNY= 1 CNY</p>
+            <p>1 BitUSD= 1 USD</p>
+        </div>
+        <div class="banner_text2"><span></span>目前已支持交易平台<span></span></div>
+        <div class="banner_list">
+            <a href="">xbrick.io</a>
+            <a href="">aex.com</a>
+            <a href="">big.one</a>
+            <a href="">zb.com</a>
+            <a href="">cointiger.com</a>
+            <a href="">coinbene</a>
+            <a href="">u.cx</a>
+            <a href="">kkcoin.com</a>
+        </div>
+    </div>
+    <div class="marquee">
+        <div class="container flex" style="background-color: #FECE68;">
+         <!-- <span><img src="imgs/icon1.png" alt="" style="width: 12px;height:12px;"></span> -->
+         <marquee behaviro="alternate">
+            <p>     
+            小二承兑服务，为用户提供可靠的币币交易兑换服务，专业提供:BitCNY/BitUSD和法币的互相兑换。</p>
+        </marquee>
+    </div> 
+</div>
+<div class="title1"><span></span>小二承兑认证商家<span></span></div>
+<div class="list flex container">
+    <div class="li">
+        <div class="name">二哥速兑</div>
+        <p class="recharge">充值：<span>0.5%</span>  提现：<span>0.5%</span></p>
+        <p class="recharge" style="margin-top: 34px">安全可靠，承兑首选</p>
+        <div class="way">
+            <a target="_blank" class="qq" href="http://wpa.qq.com/msgrd?v=3&uin=1724429306&site=qq&menu=yes">
+                <img border="0" src="imgs/qq.png" alt="在线咨" title="在线咨询"/>
+                <span>QQ交谈</span>
+            </a>
+            <div class="qq wx">
+                <img border="0" src="imgs/wx.png" alt="在线咨" title="在线咨询"/>
+                <span>微信交谈</span>
+            </div>
+        </div>
+        <div class="shadow">
+            <p style="text-align: right;"><img src="imgs/x.png" alt="" class="close"></p>
+            <img src="imgs/code.png" alt="" class="code">
+            <p id='pc'>微信扫码，快捷沟通</p>
+            <div id="move" class="button"><a href="imgs/code.png">点击下载图片</a></div>
+        </div>
+    </div>
+    <div class="li">2</div>
+    <div class="li">3</div>
+    <div class="li">4</div>
+    <div class="li">4</div>
+    <div class="li">4</div>
+</div>
+<div class="diss">
+    <p>温馨提示：本平台不收取任何费用，承兑商会收取一定兑换手续费。该费率根据市场供需可能上浮或下调，各承兑商有所不同，具体请咨询承兑商。</p>
+</div>
+<div class="footer">
+    Copyright 2010-2020 小二承兑中心 All Rights Reserved
+</div>
+</body>
+<script>
+    $('.wx').each(function(i,e) {
+        $(this).click(function(){
+            $('.shadow').eq(i).show()
+        })
+    })
+    $('.close').each(function(i,e){
+        $(this).click(function(){
+           $('.shadow').eq(i).hide()
+       })
+    })
+    isPc();
+    function isPc(){
+        if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            console.log('move')
+            $('#pc').hide()
+        } else {
+            console.log('pc')
+            $('#move').hide()
+        }
+    }
+</script>
+</html>
