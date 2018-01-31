@@ -154,22 +154,22 @@ input, select {
     padding: 10px 0;
 }
 .banner_title{
-    width: 210px;
-    height: 32px;
+    width: 189px;
+    height: 28.8px;
     margin-top: 16px;
 }
 .banner_logo{
     width: 315px;
     height: 45px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 .banner_box{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 .banner_box p{
     border-radius: 100px;
@@ -191,16 +191,16 @@ input, select {
     font-size:14px;
     color: #D8EBFF;
     /*margin-top: 10px;*/
-    max-width: 990px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 18px;
     line-height: 1.6em;
     text-align: center;
 }
 .banner_text2{
     font-size:18px;
     color: #FBAB00;
-    margin-top: 14px;
+    margin-top: 4px;
     display: flex;
     align-items: center;
 }
@@ -234,10 +234,10 @@ input, select {
     width: 100%;
 }
 .marquee p{
-    font-size:12px;
+    font-size:15px;
     color: #684803;
-    height: 40px;
-    line-height: 40px;
+    padding: 10px 4px;
+    line-height: 1.6em;
 }
 .title1{
  font-size:18px;
