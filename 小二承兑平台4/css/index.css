@@ -140,6 +140,9 @@ input, select {
    color: #333;
    font-size: 14px;
 }
+.header .right a:hover{
+    color: #003D8E;
+}
 .banner{
     width: 100%;
     background:url("../imgs/banner.png") no-repeat;
@@ -151,14 +154,15 @@ input, select {
     padding: 10px 0;
 }
 .banner_title{
-    width: 175px;
-    height: 26px;
+    width: 210px;
+    height: 32px;
     margin-top: 16px;
 }
 .banner_logo{
-    width: 210px;
-    height: 30px;
-    margin-top: 10px;
+    width: 315px;
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .banner_box{
     display: flex;
@@ -184,10 +188,12 @@ input, select {
    margin-top: -16px;
 }
 .banner_text{
-    font-size:12px;
+    font-size:14px;
     color: #D8EBFF;
     /*margin-top: 10px;*/
-    width: 90%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 20px;
     line-height: 1.6em;
     text-align: center;
 }
@@ -216,9 +222,12 @@ input, select {
 }
 .banner_list a{
     margin:4px 10px;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     text-decoration: underline;
+}
+.banner_list a:hover{
+    color: #509BFE;
 }
 .marquee{
     background-color: #FFFAE9;
@@ -312,12 +321,11 @@ input, select {
    letter-spacing: 1px;
 }
 .li .recharge span{
-    font-size:20px;
+    font-size:18px;
     color: #E11616;
     display: inline-block;
     /*border: 1px solid red;*/
-    width: 60px;
-    font-weight: bold;
+    width: 64px;
 }
 .li .number{
    font-size: 18px;
@@ -326,12 +334,11 @@ input, select {
    letter-spacing: 1px;
 }
 .li .number span{
-    font-size:20px;
+    font-size:18px;
     color: #000;
     display: inline-block;
+    width: 64px;
     /*border: 1px solid red;*/
-    width: 60px;
-    font-weight: bold;
 }
 
 .li .name{
@@ -361,6 +368,9 @@ input, select {
     justify-content: center;
     align-items: center;
 }
+.qq:hover{
+    background: #0458BE;
+}
 .qq img{
     width: 18px;
     height: 18px;
@@ -370,7 +380,9 @@ input, select {
     background-color: #038D35;
     cursor: pointer;
 }
-
+.wx:hover{
+    background: #00AF43;
+}
 
 
 
