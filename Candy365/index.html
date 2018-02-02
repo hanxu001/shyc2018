@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Candy365</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body style='height: 100%'>
+    <div class="container">
+        <div class="header flex">
+            <img src="imgs/logo.png" alt="" class="logo">
+            <div class="flex" style='justify-content: space-between;width: 100%;'>
+                <span>最快最多的糖果分享平台</span>
+                <p class="btn">一键加群</p>
+            </div>
+        </div>
+        <div class="candy">
+            <div class="candy-title flex">
+                <div class="title-item">
+                    <span class="item-span cur">全部</span>
+                </div>
+                <div class="title-item">
+                    <span class="item-span">进行中</span>
+                </div>
+                <div class="title-item">
+                    <span class="item-span">已结束</span>
+                </div>
+            </div>
+            <div class="candy-list show">
+                <!-- index < 3 -->
+                <div class="list-item">
+                    <img src="imgs/logo.png" alt="">
+                    <p>超级柚 supre Eos 1000亿枚糖果大派送</p>
+                    <div>
+                        <p>进行中</p>
+                        <p><span>1231</span>人参与</p>
+                    </div>
+                </div>
+                <!-- index > 3 -->
+                <div class="list-item-more">
+                    <img src="imgs/logo.png" alt="">
+                    <div>
+                        <p style='padding-right: 6px;'>SGC 1000注1000亿枚糖果大派送，注1000亿枚糖果大派送，注</p>
+                        <div class="flex" style='justify-content: space-between;padding-right: 20px;'>
+                            <p>进行中</p>
+                            <p><span>1231</span>人参与</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="candy-list">进行中</div>
+            <div class="candy-list">已结束</div>
+        </div>
+    </div>
+</body>
+<script>
+$('.title-item').each(function(i, e) {
+    $(this).click(function() {
+        $('.item-span').each(function() {
+            $(this).removeClass('cur')
+        })
+        $('.item-span').eq(i).addClass('cur')
+        $('.candy-list').each(function() {
+            $(this).removeClass('show')
+        })
+        $('.candy-list').eq(i).addClass('show')
+    })
+})
+</script>
+
+</html>
