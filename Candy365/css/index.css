@@ -182,6 +182,8 @@ select {
 
 
 
+
+
 /*index*/
 
 .container {
@@ -240,7 +242,7 @@ select {
 .candy-title {
     justify-content: space-between;
     height: 40px;
-    border: 1px solid red
+    /*border: 1px solid red*/
 }
 
 .candy-title div {
@@ -248,13 +250,14 @@ select {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    border: 1px solid red
+    /*border: 1px solid red*/
 }
 
 .candy-title div span {
     display: inline-block;
     width: 60px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .cur {
@@ -266,8 +269,9 @@ select {
 .candy-list {
     min-height: 100%;
     display: none;
-    border: 1px solid red;
+    border: 1px solid #fff;
     background: #eee;
+    padding-bottom: 20px;
 }
 
 .show {
@@ -277,7 +281,7 @@ select {
 .list-item {
     width: 92%;
     margin: 0 auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin-top: 13px;
     background: #fff;
     border-radius: 10px;
@@ -287,7 +291,7 @@ select {
 .list-item img {
     width: 100%;
     height: 200px;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 .list-item p {
@@ -318,9 +322,7 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*align-items: center;*/
     background: #fff;
-    border: 1px solid red;
     width: 92%;
     margin: 0 auto;
     margin-top: 13px;
@@ -333,13 +335,11 @@ select {
     width: 73px;
     height: 73px;
     margin: 0 14px;
-    border: 1px solid red;
 }
 
 .list-item-more>div {
     height: 73px;
     width: 100%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -358,4 +358,75 @@ select {
 
 .list-item-more span {
     color: #F21E1E;
+}
+
+.statue-ing {
+    color: #337DEB;
+}
+
+.statue-after {
+    color: #999999;
+}
+
+.more {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.shadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow .box {
+    background: #fff;
+    width: 315px;
+    /*height: 243px;*/
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    /*justify-content: space-between;*/
+}
+
+.shadow .box h2 {
+    font-size: 18px;
+    color: #333333;
+    /*margin-top: 20px;*/
+}
+
+.shadow .box .con {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.5em;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.shadow .box div p {
+    margin-top: 10px;
+    color: #999;
+}
+
+.shadow .box div p span {
+    margin-right: 8px;
+    color: #333;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width:14px;
+    height: 14px;
 }

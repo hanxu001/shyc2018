@@ -17,49 +17,70 @@
             <img src="imgs/logo.png" alt="" class="logo">
             <div class="flex" style='justify-content: space-between;width: 100%;'>
                 <span>最快最多的糖果分享平台</span>
-                <p class="btn">一键加群</p>
+                <p class="btn go">一键加群</p>
+            </div>
+        </div>
+        <div class="candy-title flex">
+            <div class="title-item">
+                <span class="item-span cur">全部</span>
+            </div>
+            <div class="title-item">
+                <span class="item-span">进行中</span>
+            </div>
+            <div class="title-item">
+                <span class="item-span">已结束</span>
             </div>
         </div>
         <div class="candy">
-            <div class="candy-title flex">
-                <div class="title-item">
-                    <span class="item-span cur">全部</span>
-                </div>
-                <div class="title-item">
-                    <span class="item-span">进行中</span>
-                </div>
-                <div class="title-item">
-                    <span class="item-span">已结束</span>
-                </div>
-            </div>
-            <div class="candy-list show">
+            <div class="candy-list show candy-list1">
                 <!-- index < 3 -->
                 <div class="list-item">
-                    <img src="imgs/logo.png" alt="">
+                    <img src="imgs/demo.png" alt="">
                     <p>超级柚 supre Eos 1000亿枚糖果大派送</p>
                     <div>
-                        <p>进行中</p>
+                        <p class="statue">进行中</p>
                         <p><span>1231</span>人参与</p>
                     </div>
                 </div>
                 <!-- index > 3 -->
                 <div class="list-item-more">
-                    <img src="imgs/logo.png" alt="">
+                    <img src="imgs/demo.png" alt="">
                     <div>
                         <p style='padding-right: 6px;'>SGC 1000注1000亿枚糖果大派送，注1000亿枚糖果大派送，注</p>
                         <div class="flex" style='justify-content: space-between;padding-right: 20px;'>
-                            <p>进行中</p>
+                            <p class="statue">进行中</p>
                             <p><span>1231</span>人参与</p>
                         </div>
                     </div>
                 </div>
+                <p class="more">点击加载更多</p>
             </div>
-            <div class="candy-list">进行中</div>
-            <div class="candy-list">已结束</div>
+            <div class="candy-list candy-list2">进行中</div>
+            <div class="candy-list candy-list3">已结束</div>
+        </div>
+    </div>
+    <div class="shadow">
+        <div class="box">
+            <img src="imgs/x.png" alt="" class="close">
+            <h2>一键加群</h2>
+            <p class="con">加入本群获得最新最快的糖果分享活动及教程，为糖果党提供最好的交流环境！</p>
+            <div>
+                <p>
+                    <span>QQ群</span> 486215325
+                </p>
+                <!--   <p class="btns">一键复制</p> -->
+            </div>
+            <div>
+                <p>
+                    <span>微信</span> candu001
+                </p>
+                <!-- <p class="btns">一键复制</p> -->
+            </div>
         </div>
     </div>
 </body>
 <script>
+$('.shadow').hide()
 $('.title-item').each(function(i, e) {
     $(this).click(function() {
         $('.item-span').each(function() {
@@ -71,6 +92,16 @@ $('.title-item').each(function(i, e) {
         })
         $('.candy-list').eq(i).addClass('show')
     })
+})
+// 假设每页显示5个 则item数量 > 5时加载更多才显示
+$('.more').click(function() {
+
+})
+$('.go').click(function() {
+    $('.shadow').show()
+})
+$('.close').click(function() {
+    $('.shadow').hide()
 })
 </script>
 
