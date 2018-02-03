@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Candy365</title>
+    <title>candy365.io-最好的糖果分享平台</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
@@ -22,13 +22,13 @@
         </div>
         <div class="candy-title flex">
             <div class="title-item">
-                <span class="item-span cur">全部</span>
+                <a class="item-span cur">全部</a>
             </div>
             <div class="title-item">
-                <span class="item-span">进行中</span>
+                <a class="item-span">进行中</a>
             </div>
             <div class="title-item">
-                <span class="item-span">已结束</span>
+                <a class="item-span">已结束</a>
             </div>
         </div>
         <div class="candy">
@@ -91,7 +91,6 @@
     </div>
 </body>
 <script>
-// $('.shadow').hide()
 $('.title-item').each(function(i, e) {
     $(this).click(function() {
         $('.item-span').each(function() {
@@ -103,10 +102,6 @@ $('.title-item').each(function(i, e) {
         })
         $('.candy-list').eq(i).addClass('show')
     })
-})
-// 假设每页显示5个 则item数量 > 5时加载更多才显示
-$('.more').click(function() {
-
 })
 $('.go').click(function() {
     $('.shadow').show()
