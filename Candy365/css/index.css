@@ -200,6 +200,7 @@ select {
 
 
 
+
 /*index*/
 
 .container {
@@ -349,13 +350,18 @@ select {
     padding-right: 20px;
 }
 
-.list-item-more img {
+.list-item-more .img {
     width: 73px;
     height: 73px;
     margin: 0 14px;
 }
 
-.list-item-more>div {
+.list-item-more .img img {
+    width: 73px;
+    height: 73px;
+}
+
+.list-item-more .div {
     height: 73px;
     width: 100%;
     display: flex;
@@ -453,6 +459,7 @@ select {
 
 
 
+
 /**/
 
 .wxtip {
@@ -500,6 +507,7 @@ select {
     letter-spacing: 1px;
     font-size: 20px;
 }
+
 
 
 
