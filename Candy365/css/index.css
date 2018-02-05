@@ -186,6 +186,20 @@ select {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*index*/
 
 .container {
@@ -209,29 +223,31 @@ select {
 
 .header {
     height: 60px;
-    /*border-top: 1px solid #ccc;*/
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
     padding: 0 13px;
+    /*box-shadow: 0px -2px 2px 0.1px #888 inset;*/
 }
 
 .header .logo {
     width: 59px;
     height: 38px;
-    margin-right: 16px;
+    margin-right: 6px;
 }
 
 .header span {
-    font-size: 16px;
+    font-size: 12px;
     color: #333;
+    margin-top: 26px;
 }
 
 .header .btn {
     width: 92px;
     height: 30px;
-    background: #337DEB;
+    border: 1px solid #DE2726;
     border-radius: 30px;
     font-size: 14px;
-    color: #fff;
+    color: #DE2726;
     line-height: 30px;
     text-align: center;
     letter-spacing: 1px;
@@ -258,9 +274,9 @@ select {
     cursor: pointer;
 }
 
-.candy-title div span {
+.candy-title div a {
     display: inline-block;
-    width: 60px;
+    width: 90px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -268,15 +284,15 @@ select {
 
 .cur {
     font-size: 15px;
-    color: #337DEB;
-    border-bottom: 2px solid #337DEB;
+    color: #DE2726;
+    border-bottom: 2px solid #DE2726;
 }
 
 .candy-list {
     min-height: 100%;
     display: none;
     border: 1px solid #fff;
-    background: #eee;
+    background: #F6F7F8;
     padding-bottom: 20px;
 }
 
@@ -285,12 +301,14 @@ select {
 }
 
 .list-item {
-    width: 92%;
-    margin: 0 auto;
+    width: 100%;
     margin-top: 13px;
     background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.list-item:first-child {
+    margin-top: 2px;
 }
 
 .list-item img {
@@ -300,7 +318,7 @@ select {
 
 .list-item p {
     color: #333;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .list-item>p {
@@ -311,8 +329,7 @@ select {
 
 .list-item div {
     padding: 0 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -327,12 +344,9 @@ select {
     flex-direction: row;
     justify-content: space-between;
     background: #fff;
-    width: 92%;
-    margin: 0 auto;
     margin-top: 13px;
-    border-radius: 10px;
-    overflow: hidden;
     padding: 20px 0;
+    padding-right: 20px;
 }
 
 .list-item-more img {
@@ -352,12 +366,12 @@ select {
 
 .list-item-more p {
     color: #333;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.4em;
 }
 
 .list-item-more>p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .list-item-more span {
@@ -384,7 +398,7 @@ select {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .8);
     display: none;
 }
 
@@ -432,7 +446,15 @@ select {
     width: 14px;
     height: 14px;
 }
+
+
+
+
+
+
+
 /**/
+
 .wxtip {
     position: fixed;
     text-align: center;
@@ -458,20 +480,265 @@ select {
     line-height: 2;
     margin-top: 150px;
 }
-.wx-logo{
-    width:72px;
+
+.wx-logo {
+    width: 72px;
     height: 78px;
     margin-top: 40px;
 }
-.wxtip h2{
+
+.wxtip h2 {
     color: #fff;
     margin-top: 30px;
     letter-spacing: 1px;
     font-size: 20px;
 }
-.wxtip h3{
+
+.wxtip h3 {
     color: #fff;
     margin-top: 30px;
     letter-spacing: 1px;
     font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/*jieshao*/
+
+.j-banner {
+    width: 100%;
+    height: auto;
+    background-image: url('../imgs/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #E2E2E2;
+}
+
+.j-banner2 {
+    width: 100%;
+    height: auto;
+    /*background-image: url('../imgs/bg2.png');*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #E2E2E2;
+}
+
+.j-banner2 h2 {
+    font-size: 19px;
+    color: #333;
+    margin-top: 31px;
+    margin-bottom: 20px;
+}
+
+.j-banner img {
+    width: 72px;
+    height: 78px;
+    margin-top: 30px;
+}
+
+.j-banner h2 {
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.j-title {
+    text-align: center;
+}
+
+.j-title p {
+    font-size: 17px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.j-title p span {
+    color: #F66300;
+}
+
+.j-time {
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    margin-top: 24px;
+}
+
+.j-time span {
+    color: #F30100
+}
+
+.j-jieshao {
+    width: 86px;
+    height: 30px;
+    background: -webkit-linear-gradient(#37A5FF, #337DEB);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#37A5FF, #337DEB);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#37A5FF, #337DEB);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#37A5FF, #337DEB);
+    /* 标准的语法 */
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33px;
+    margin-left: 21px;
+}
+
+.j-line {
+    margin-left: 21px;
+    margin-right: 21px;
+    border-bottom: 1px solid #337DEB
+}
+
+.j-cons {
+    font-size: 15px;
+    color: #666;
+    letter-spacing: 1px;
+    line-height: 2em;
+    text-indent: 2em;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.j-cons[data-statue='0em'] {
+    text-indent: 0;
+}
+
+.j-cons span {
+    color: #F66300;
+}
+
+.j-candy {
+    width: 90%;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    background: -webkit-linear-gradient(#37A5FF, #337DEB);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#37A5FF, #337DEB);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#37A5FF, #337DEB);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#37A5FF, #337DEB);
+    /* 标准的语法 */
+    position: fixed;
+    margin-left: 5%;
+    bottom: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.imtoken {
+    color: #2D70D3;
+}
+
+.j-box1 {
+    width: 240px;
+    padding-bottom: 20px;
+    /*height: 320px;*/
+    background: #FFFFFF;
+    border: 1px solid #F8F8F8;
+    box-shadow: 0 0 10px 0 rgba(12, 19, 60, 0.06);
+    border-radius: 5px;
+    margin-left: 21px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.j-box1 img {
+    width: 32px;
+    height: 35px;
+    margin-top: 30px;
+}
+
+.j-box1 h2 {
+    font-size: 10px;
+    color: #333;
+    margin-top: 24px;
+}
+
+.j-box1 .text1 {
+    font-size: 12px;
+    color: #333;
+    margin-top: 8px;
+}
+
+.j-box1 .text2 {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6em;
+    margin-top: 16px;
+    padding: 0 10px;
+}
+
+.j-box1 .text1 span {
+    color: #F66300;
+}
+
+.j-box1 input {
+    background: #F4F4F4;
+    border-radius: 100px;
+    height: 24px;
+    width: 80%;
+    outline: none;
+    border: 0;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.j-box1 div {
+    width: 88%;
+    height: 24px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+    text-align: center;
+    font-size: 9px;
+    color: #fff;
+    background: -webkit-linear-gradient(#37A5FF, #337DEB);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#37A5FF, #337DEB);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#37A5FF, #337DEB);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#37A5FF, #337DEB);
+    /* 标准的语法 */
+    margin-top: 15px;
+}
+
+.j-side img {
+    position: fixed;
+    right: 10px;
+    bottom: 130px;
+    width: 75px;
+    height: 75px;
 }
