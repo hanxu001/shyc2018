@@ -278,6 +278,7 @@ select {
     margin-right: 4px;
     margin-left: 15px;
     border-radius: 50%;
+    background-color: #000;
 }
 
 .sub span:first-child {
@@ -419,7 +420,7 @@ select {
     text-align: left;
     padding-left: 20px;
     /*border: 1px solid red;*/
-    margin-right: -60px;
+    margin-right: -40px;
 }
 
 .con-item2 {
@@ -486,7 +487,7 @@ select {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .8);
     display: none;
 }
 
@@ -506,7 +507,7 @@ select {
 }
 
 .wx-logo {
-    width: 72px;
+    width: 78px;
     height: 78px;
     margin-top: 40px;
 }
