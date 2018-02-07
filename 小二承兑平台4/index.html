@@ -245,10 +245,6 @@ $('.close').each(function(i, e) {
 })
 
 isPc();
-if (is_weixn()) {
-    $('.wxtip').show()
-}
-
 function isPc() {
     if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) || /(Android)/i.test(navigator.userAgent)) {
         $('.pc').hide()
@@ -256,7 +252,9 @@ function isPc() {
         $('.move').hide()
     }
 }
-
+if (is_weixn()) {
+    $('.wxtip').show()
+}
 function is_weixn() {
     var ua = navigator.userAgent.toLowerCase();
     if (ua.match(/MicroMessenger/i) == "micromessenger") {

@@ -83,14 +83,36 @@
             <span>扫码立即下载</span>
         </div>
     </div>
+    <div class="wxtip">
+        <img src="imgs/weixin-tip.png" class="wxtip-icon">
+        <p class="wxtip-txt">
+            为了更好的浏览体验
+            <br/> 请选择在浏览器中打开
+        </p>
+        <img src="imgs/wx-logo.png" alt="" class="wx-logo">
+        <h2>Candy365.io</h2>
+        <h3>中国第一糖果分享门户</h3>
+    </div>
 </body>
 <script>
-  $('#btnIos').click(function(){
+$('#btnIos').click(function() {
     console.log('ios下载')
-  })
-  $('#btnAndr').click(function(){
+})
+$('#btnAndr').click(function() {
     console.log('andr下载')
-  })
+})
+if (is_weixn()) {
+    $('.wxtip').show()
+}
+
+function is_weixn() {
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
 </script>
 
 </html>
