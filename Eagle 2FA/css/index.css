@@ -194,7 +194,9 @@ select {
     overflow: hidden;
     /*border: 1px solid red;*/
 }
-
+.b1{
+    /*border: 1px solid red;*/
+}
 .flex {
     display: flex;
     -webkit-flex-direction: row;
