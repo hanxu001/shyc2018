@@ -32,27 +32,49 @@
         </div>
         <div class="btn-box">
             <a href="https://itunes.apple.com/cn/app/id1300115032?mt=8" target="_blank">
-                <div class="btn" data-type='ios' id="btnIos">
-                    <div class="btn-l">
-                        <p>前往App Store下载</p>
-                        <h2>IOS</h2>
-                    </div>
+                <div class="btn" data-type='ios'>
                     <div class="btn-r">
                         <img src="imgs/IOS.png" alt="">
                     </div>
+                    <div class="btn-l">
+                        <p>IOS客户端下载</p>
+                        <h2>App Store</h2>
+                    </div>
                 </div>
             </a>
-            <a href="#" target="_blank">
-                <div class="btn" data-type='andr' id="btnAndr">
-                    <div class="btn-l">
-                        <p>官方安装包下载</p>
-                        <h2>Android</h2>
-                    </div>
+            <div style='position: relative;'>
+                <div class="alert">
+                    <a href="https://play.google.com/store/apps/details?id=com.yicheng.eagletotpauth  " target="_blank">
+                        <div class="btn btn2" data-type='andr'>
+                            <div class="btn-r">
+                                <img src="imgs/googleplay.png" alt="">
+                            </div>
+                            <div class="btn-l">
+                                <p>Google Play</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="http://tools.eaglewallet.io/coin/soft_version/5a95218925bd4.apk" target="_blank">
+                        <div class="btn btn2" data-type='andr' style='margin-top:1px;'>
+                            <div class="btn-r">
+                                <img src="imgs/down.png" alt="">
+                            </div>
+                            <div class="btn-l">
+                                <p>直接下载</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn" data-type='andr' id="andr">
                     <div class="btn-r">
                         <img src="imgs/Android.png" alt="">
                     </div>
+                    <div class="btn-l">
+                        <p>安卓客户端下载</p>
+                        <h2>Android</h2>
+                    </div>
                 </div>
-            </a>
+            </div>
         </div>
         <div class="line"></div>
         <div class="con-list">
@@ -103,11 +125,12 @@
     </div>
 </body>
 <script>
-$('#btnIos').click(function() {
-    console.log('ios下载')
-})
-$('#btnAndr').click(function() {
-    console.log('andr下载')
+$('#andr').click(function() {
+    if ($('.alert').css('display') === 'block') {
+        $('.alert').css('display', 'none')
+    } else {
+        $('.alert').css('display', 'block')
+    }
 })
 if (is_weixn()) {
     $('.wxtip').show()
