@@ -347,8 +347,10 @@ select {
 }
 
 .btn-r {
-    width: 22px;
+    width: 40px;
     height: 22px;
+    text-align: center;
+    /*border: 1px solid red*/
 }
 
 .btn-r img {
@@ -543,7 +545,7 @@ select {
     position: absolute;
     left: 0;
     top: -104px;
-    width: 154px;
+    width: 158px;
     height: 101px;
     border-radius: 5px;
     overflow: hidden;
