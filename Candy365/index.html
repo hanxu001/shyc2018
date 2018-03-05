@@ -91,6 +91,11 @@
         <h2>Candy365.io</h2>
         <h3>中国第一糖果分享门户</h3>
     </div>
+    <div class="advert">
+        <img src="imgs/1.png" alt="">
+        <div class="advert-close"></div>
+        <a href="http://m.bihuisuan.com" class="advert-download" target='_blank'></a>
+    </div>
 </body>
 <script>
 $('.title-item').each(function(i, e) {
@@ -123,6 +128,11 @@ function is_weixn() {
         return false;
     }
 }
+$('.advert-close').click(function() {
+    $('.advert').hide()
+})
+var advert_num = Math.floor(Math.random()*4) + 1;
+console.log(advert_num)
 </script>
 
 </html>

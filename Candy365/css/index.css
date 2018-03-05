@@ -750,3 +750,28 @@ select {
     width: 75px;
     height: 75px;
 }
+.advert{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:auto;
+}
+.advert img{
+    width: 100%;
+    height:60px;
+}
+.advert .advert-download{
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    width:84px;
+    height: 34px;
+}
+.advert .advert-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:20px;
+    height: 20px;
+}
