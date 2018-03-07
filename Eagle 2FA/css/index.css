@@ -180,7 +180,7 @@ select {
 /*index*/
 
 .container {
-    max-width: 1200px;
+    max-width: 500px;
     margin: 0 auto;
     background-color: #fff;
     min-height: 100%;
