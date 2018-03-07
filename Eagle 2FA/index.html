@@ -54,7 +54,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="http://tools.eaglewallet.io/coin/soft_version/5a95218925bd4.apk" target="_blank">
+                    <a href="http://tools.eaglewallet.io/coin/soft_version/5a95218925bd4.apk" target="_blank" class="down-in-web">
                         <div class="btn btn2" data-type='andr' style='margin-top:1px;'>
                             <div class="btn-r">
                                 <img src="imgs/down.png" alt="">
@@ -64,6 +64,16 @@
                             </div>
                         </div>
                     </a>
+                    <div class="down-in-wx">
+                        <div class="btn btn2" data-type='andr' style='margin-top:1px;'>
+                            <div class="btn-r">
+                                <img src="imgs/down.png" alt="">
+                            </div>
+                            <div class="btn-l">
+                                <p style='font-size: 14px'>直接下载</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="btn" data-type='andr' id="andr">
                     <div class="btn-r">
@@ -101,13 +111,13 @@
                     <img src="imgs/3.png" alt="">
                 </div>
             </div>
-        </div>
-        <div class="con-item con-item4">
-            <div>
-                <p>可与多个提供商搭配使用</p>
-                <p>多帐号，多设备</p>
+            <div class="con-item con-item4">
+                <div>
+                    <p>可与多个提供商搭配使用</p>
+                    <p>多帐号，多设备</p>
+                </div>
+                <img src="imgs/4.png" alt="">
             </div>
-            <img src="imgs/4.png" alt="">
         </div>
         <div class="footer">
             Copyright ©2018 Eagle 2FA All Rights Reserved
@@ -133,8 +143,12 @@ $('#andr').click(function() {
     }
 })
 if (is_weixn()) {
-    $('.wxtip').show()
+    $('.down-in-wx').show()
+    $('.down-in-web').hide()
 }
+$('.down-in-wx').click(function() {
+    $('.wxtip').show()
+})
 
 function is_weixn() {
     var ua = navigator.userAgent.toLowerCase();

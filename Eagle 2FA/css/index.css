@@ -359,11 +359,10 @@ select {
 }
 
 .con-list {
-    /*border: 1px solid red;*/
-    background-image: url('../imgs/bg.png');
+    background-image: url('../imgs/bg2.png');
     background-repeat: no-repeat;
-    background-size: 200% 90%;
-    background-position: 50% 50%;
+    background-size: 100% 100%;
+   /* background-position: 50% 50%;*/
 }
 
 .con-item {

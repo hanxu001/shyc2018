@@ -328,7 +328,7 @@ select {
     font-size: 16px;
 }
 
-.list-item div {
+.list-item>div {
     padding: 0 20px;
     margin-top: 15px;
     display: flex;
@@ -776,4 +776,9 @@ select {
     width:20px;
     height: 20px;
     z-index: 999;
+}
+
+.star-div img{
+    width: 84px;
+    height: 12px;
 }
