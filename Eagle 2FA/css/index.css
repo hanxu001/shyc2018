@@ -182,10 +182,8 @@ select {
 .container {
     max-width: 500px;
     margin: 0 auto;
-    background-color: #fff;
     min-height: 100%;
     overflow: hidden;
-    /*border: 1px solid red;*/
 }
 
 .b1 {
@@ -488,6 +486,7 @@ select {
     height: 100%;
     background-color: rgba(0, 0, 0, .8);
     display: none;
+    z-index: 999;
 }
 
 .wxtip-icon {
@@ -553,4 +552,19 @@ select {
 
 .btn2 {
     border-radius: 0px;
+}
+.code{
+    position: fixed;
+    right: 0%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+}
+.code div{
+    text-align: right;
+}
+.code img{
+    width: 144px;
+    height: 164px;
 }
