@@ -348,12 +348,12 @@ select {
     margin-top: 13px;
     padding: 20px 0;
     padding-right: 20px;
+    padding-left: 14px;
 }
 
 .list-item-more .img {
     width: 73px;
     height: 73px;
-    margin: 0 14px;
 }
 
 .list-item-more .img img {
@@ -368,6 +368,7 @@ select {
     flex-direction: column;
     justify-content: space-between;
     align-items: space-between;
+    padding-left: 14px;
 }
 
 .list-item-more p {
