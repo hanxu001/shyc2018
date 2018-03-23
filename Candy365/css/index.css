@@ -265,6 +265,7 @@ select {
 .candy-title {
     justify-content: space-between;
     height: 40px;
+    background: #fff;
 }
 
 .candy-title div {

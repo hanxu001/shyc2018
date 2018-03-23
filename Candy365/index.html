@@ -20,7 +20,7 @@
                 <p class="btn go" id="jq">一键加群</p>
             </div>
         </div>
-        <div class="candy-title flex">
+        <div class="candy-title flex sticky">
             <div class="title-item">
                 <a class="item-span cur">全部</a>
             </div>
@@ -109,7 +109,9 @@
         <a href="http://m.bihuisuan.com" class="advert-download" target='_blank'></a>
     </div>
 </body>
+<script src='js/jQuery.positionSticky.min.js'></script>
 <script>
+jQuery('.sticky').positionSticky();
 $('.title-item').each(function(i, e) {
     $(this).click(function() {
         $('.item-span').each(function() {
