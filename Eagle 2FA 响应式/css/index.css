@@ -301,8 +301,9 @@ select {
     flex-direction: column;
     justify-content: center;
     /*align-items: center;*/
-    width: 100px;
+    width: 120px;
     height: 100%;
+    /*border: 1px solid red*/
 }
 
 .btn-l p {
@@ -312,7 +313,7 @@ select {
 }
 
 .btn-l h2 {
-    font-size: 17px;
+    font-size: 16px;
     color: #fff;
     margin-top: 4px;
 }
