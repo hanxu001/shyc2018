@@ -230,11 +230,11 @@ select {
 }
 
 .con {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .con p {
-    font-size: 17px;
+    font-size: 22px;
     color: #333;
     line-height: 2.2em;
     letter-spacing: 1px;
@@ -242,8 +242,8 @@ select {
 }
 
 .con img {
-    /*width: 336px;*/
-    height: 236px;
+    width: 353px;
+    height: 434px;
 }
 
 .btn-box {
