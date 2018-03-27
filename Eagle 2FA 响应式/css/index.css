@@ -178,13 +178,11 @@ select {
 
 
 
-
 /*index*/
 
 .container {
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0 auto;
-    background-color: #fff;
 }
 
 .flex {
@@ -201,21 +199,134 @@ select {
 }
 
 .container>div {
-    width: 450px;
-    border: 1px solid red
+    width: 430px;
+    /*border: 1px solid red*/
 }
 
+.banner {
+    width: 100%;
+    background: #0146C5;
+    padding: 80px 0;
+}
+
+.banner h2 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.banner h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.banner p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.con {
+    padding: 50px 0;
+}
 
 .con p {
     font-size: 17px;
     color: #333;
     line-height: 2.2em;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .con img {
     /*width: 336px;*/
     height: 236px;
+}
+
+.btn-box {
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 20px;
+    /*border: 1px solid red*/
+}
+
+.btn {
+    width: 120px;
+    /*width: 100%;*/
+    /*max-width: 200px;*/
+    height: 52px;
+    /*margin: 0 10px;*/
+    background: #329CFF;
+    border-radius: 4px;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.btn[data-type='ios'] {
+    margin-right: 10px;
+}
+
+.btn[data-type='andr'] {
+    margin-left: 10px;
+    background-color: #37BE05;
+}
+
+.btn-l {
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    width: 100px;
+    height: 100%;
+}
+
+.btn-l p {
+    font-size: 11px;
+    color: #fff;
+    margin-top: 1px;
+}
+
+.btn-l h2 {
+    font-size: 17px;
+    color: #fff;
+    margin-top: 4px;
+}
+
+.btn-r {
+    width: 40px;
+    height: 22px;
+    text-align: center;
+    /*border: 1px solid red*/
+}
+
+.btn-r img {
+    width: 22px;
+    height: 22px;
 }
 
 .footer {
@@ -231,4 +342,83 @@ select {
     background-color: #1C1B21;
     font-size: 13px;
     color: #848589;
+}
+
+.alert {
+    position: absolute;
+    left: 0;
+    top: -104px;
+    width: 158px;
+    height: 101px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+}
+
+.btn2 {
+    border-radius: 0px;
+}
+
+.wxtip {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    z-index: 999;
+}
+
+.wxtip-icon {
+    width: 58px;
+    height: 75px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.wxtip-txt {
+    color: #fff;
+    font-size: 16px;
+    line-height: 2;
+    margin-top: 150px;
+}
+
+.wx-logo {
+    width: 78px;
+    height: 78px;
+    margin-top: 40px;
+}
+
+.wxtip h2 {
+    color: #fff;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.wxtip h3 {
+    color: #fff;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.code {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    text-align: center;
+    z-index: 99;
+}
+
+.code div {
+    text-align: right;
+}
+
+.code img {
+    width: 144px;
+    height: 164px;
 }
