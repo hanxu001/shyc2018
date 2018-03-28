@@ -23,7 +23,7 @@
                 <p class="center">二次验证码快速添加，账户安全性双重提升</p>
                 <div class="btn-box-pc">
                     <div>
-                        <a href="https://itunes.apple.com/cn/app/id1300115032?mt=8" target="_blank">
+                        <a href="https://itunes.apple.com/cn/app/id1300115032?mt=8" target="_blank" class="appstore">
                             <div class="btn" data-type='ios'>
                                 <div class="btn-r">
                                     <img src="imgs/IOS.png" alt="">
@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="alert">
-                                <a href="http://tools.eaglewallet.io/coin/soft_version/5a95218925bd4.apk" target="_blank" class="down-in-web">
+                                <a href="http://tools.eaglewallet.io/coin/soft_version/5a95218925bd4.apk" class="down-in-web android">
                                     <div class="btn btn2" data-type='andr'>
                                         <div class="btn-r">
                                             <img src="imgs/down.png" alt="">
@@ -55,7 +55,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="https://play.google.com/store/apps/details?id=com.yicheng.eagletotpauth  " target="_blank">
+                                <a href="https://play.google.com/store/apps/details?id=com.yicheng.eagletotpauth  " target="_blank" class="google">
                                     <div class="btn btn2" data-type='andr' style='margin-top:1px;'>
                                         <div class="btn-r">
                                             <img src="imgs/googleplay.png" alt="">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="btn-box-move">
-                    <a href="https://itunes.apple.com/cn/app/id1300115032?mt=8" target="_blank">
+                    <a href="https://itunes.apple.com/cn/app/id1300115032?mt=8" target="_blank" class="appstore">
                         <div class="btn" data-type='ios'>
                             <div class="btn-r">
                                 <img src="imgs/IOS.png" alt="">
@@ -105,7 +105,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="https://play.google.com/store/apps/details?id=com.yicheng.eagletotpauth  " target="_blank">
+                            <a href="http://tools.eaglewallet.io/coin/soft_version/5a95218925bd4.apk" class="down-in-web">
+                                    <div class="btn btn2 android" data-type='andr'>
+                                        <div class="btn-r">
+                                            <img src="imgs/down.png" alt="">
+                                        </div>
+                                        <div class="btn-l">
+                                            <p style='font-size: 14px'>直接下载</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.yicheng.eagletotpauth  " target="_blank" class="google">
                                 <div class="btn btn2" data-type='andr' style='margin-top:1px;'>
                                     <div class="btn-r">
                                         <img src="imgs/googleplay.png" alt="">
@@ -201,6 +211,10 @@ $('.andr1').click(function() {
 if (is_weixn()) {
     $('.down-in-wx').show()
     $('.down-in-web').hide()
+}
+else{
+    $('.down-in-wx').hide()
+    $('.down-in-web').show()
 }
 $('.down-in-wx').click(function() {
     $('.wxtip').show()
