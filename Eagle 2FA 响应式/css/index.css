@@ -85,6 +85,7 @@ body {
     color: #333;
     height: 100%;
     line-height: 1;
+    font-family: PingFangSC-Medium;
 }
 
 :focus {
@@ -178,6 +179,7 @@ select {
 
 
 
+
 /*index*/
 
 .container {
@@ -212,21 +214,22 @@ select {
 .banner h2 {
     font-size: 30px;
     color: #fff;
-    text-align: center;
+    /*text-align: center;*/
+    margin-top: 35px;
 }
 
 .banner h3 {
     font-size: 18px;
     color: #fff;
-    margin-top: 24px;
-    text-align: center;
+    margin-top: 17px;
+    /*text-align: center;*/
 }
 
 .banner p {
     font-size: 16px;
-    color: #fff;
-    margin-top: 15px;
-    text-align: center;
+    color: #BDD4FF;
+    margin-top: 17px;
+    /*text-align: center;*/
 }
 
 .con {
@@ -245,7 +248,14 @@ select {
     width: 353px;
     height: 434px;
 }
-
+.con1 p,.con3 p,.con5 p{
+    text-align: left;
+    margin-left: 100px;
+}
+.con2 p,.con4 p{
+    text-align: right;
+    margin-right: 80px;
+}
 .btn-box {
     display: flex;
     -webkit-flex-direction: row;
@@ -260,6 +270,36 @@ select {
     margin: 0px auto;
     margin-top: 20px;
     /*border: 1px solid red*/
+}
+
+.btn-box-pc {
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    -ms-align-items: center;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.btn-box-move {
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin-top: 43px;
+}
+
+.btn-box-move .btn {
+    margin: 0 10px;
 }
 
 .btn {
@@ -284,11 +324,11 @@ select {
 }
 
 .btn[data-type='ios'] {
-    margin-right: 10px;
+    /*margin-right: 10px;*/
 }
 
 .btn[data-type='andr'] {
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     background-color: #37BE05;
 }
 
@@ -348,7 +388,7 @@ select {
 .alert {
     position: absolute;
     left: 0;
-    top: -104px;
+    top: 53px;
     width: 158px;
     height: 101px;
     border-radius: 5px;
@@ -422,4 +462,13 @@ select {
 .code img {
     width: 144px;
     height: 164px;
+}
+
+.tac {
+    text-align: center!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+.padding20{
+    padding: 20px 0!important;
 }
