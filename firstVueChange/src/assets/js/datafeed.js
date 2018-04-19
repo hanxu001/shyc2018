@@ -356,7 +356,7 @@ Datafeeds.UDFCompatibleDatafeed.prototype.getBars = function (symbolInfo, resolu
     this._isGettingBar = true;
     var params = {"method": "kline.query",
       "params":[symbolInfo.market,rangeStartDate,rangeEndDate,hash[resolution]]};
-    this._send("ws://192.168.1.19:9501", params, function (response) {
+    this._send("ws://192.168.1.19:9502", params, function (response) {
 
       var res = JSON.parse(response);
       if(!res.error){
